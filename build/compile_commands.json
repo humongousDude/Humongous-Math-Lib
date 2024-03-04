@@ -1,0 +1,26 @@
+[
+{
+  "directory": "C:/dev/Coding/Serious Projects/Humongous-Math-Lib/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -I\"C:/dev/Coding/Serious Projects/Humongous-Math-Lib/src/inc\" -isystem C:/dev/vcpkg/installed/x64-windows/include -O0 -std=gnu++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview @CMakeFiles\\main.dir\\src\\main.cpp.obj.modmap -o CMakeFiles\\main.dir\\src\\main.cpp.obj -c \"C:\\dev\\Coding\\Serious Projects\\Humongous-Math-Lib\\src\\main.cpp\"",
+  "file": "C:\\dev\\Coding\\Serious Projects\\Humongous-Math-Lib\\src\\main.cpp",
+  "output": "CMakeFiles\\main.dir\\src\\main.cpp.obj"
+},
+{
+  "directory": "C:/dev/Coding/Serious Projects/Humongous-Math-Lib/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -I\"C:/dev/Coding/Serious Projects/Humongous-Math-Lib/src/inc\" -isystem C:/dev/vcpkg/installed/x64-windows/include -O0 -std=gnu++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview @CMakeFiles\\main.dir\\src\\src\\utils.cpp.obj.modmap -o CMakeFiles\\main.dir\\src\\src\\utils.cpp.obj -c \"C:\\dev\\Coding\\Serious Projects\\Humongous-Math-Lib\\src\\src\\utils.cpp\"",
+  "file": "C:\\dev\\Coding\\Serious Projects\\Humongous-Math-Lib\\src\\src\\utils.cpp",
+  "output": "CMakeFiles\\main.dir\\src\\src\\utils.cpp.obj"
+},
+{
+  "directory": "C:/dev/Coding/Serious Projects/Humongous-Math-Lib/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -I\"C:/dev/Coding/Serious Projects/Humongous-Math-Lib/src/inc\" -isystem C:/dev/vcpkg/installed/x64-windows/include -O0 -std=gnu++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview @CMakeFiles\\main.dir\\src\\src\\vector2.cpp.obj.modmap -o CMakeFiles\\main.dir\\src\\src\\vector2.cpp.obj -c \"C:\\dev\\Coding\\Serious Projects\\Humongous-Math-Lib\\src\\src\\vector2.cpp\"",
+  "file": "C:\\dev\\Coding\\Serious Projects\\Humongous-Math-Lib\\src\\src\\vector2.cpp",
+  "output": "CMakeFiles\\main.dir\\src\\src\\vector2.cpp.obj"
+},
+{
+  "directory": "C:/dev/Coding/Serious Projects/Humongous-Math-Lib/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -I\"C:/dev/Coding/Serious Projects/Humongous-Math-Lib/src/inc\" -isystem C:/dev/vcpkg/installed/x64-windows/include -O0 -std=gnu++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview @CMakeFiles\\main.dir\\src\\src\\vector3.cpp.obj.modmap -o CMakeFiles\\main.dir\\src\\src\\vector3.cpp.obj -c \"C:\\dev\\Coding\\Serious Projects\\Humongous-Math-Lib\\src\\src\\vector3.cpp\"",
+  "file": "C:\\dev\\Coding\\Serious Projects\\Humongous-Math-Lib\\src\\src\\vector3.cpp",
+  "output": "CMakeFiles\\main.dir\\src\\src\\vector3.cpp.obj"
+}
+]
