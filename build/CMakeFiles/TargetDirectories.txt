@@ -1,3 +1,0 @@
-C:/dev/Coding/Serious Projects/Humongous-Math-Lib/build/CMakeFiles/main.dir
-C:/dev/Coding/Serious Projects/Humongous-Math-Lib/build/CMakeFiles/edit_cache.dir
-C:/dev/Coding/Serious Projects/Humongous-Math-Lib/build/CMakeFiles/rebuild_cache.dir

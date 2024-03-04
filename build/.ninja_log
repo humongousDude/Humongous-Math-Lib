@@ -1,7 +1,0 @@
-# ninja log v5
-3	25	0	C:/dev/Coding/Serious Projects/Humongous-Math-Lib/build/CMakeFiles/cmake.verify_globs	3803db3899124f
-32	86	7312814758499336	CMakeFiles/main.dir/src/src/vector2.cpp.obj	416df2fd7de54ef4
-29	87	7312814758519334	CMakeFiles/main.dir/src/src/utils.cpp.obj	369fdf01f027041e
-35	101	7312814758660271	CMakeFiles/main.dir/src/src/vector3.cpp.obj	2fb3d2a6929ec0d4
-25	1032	7312814767930273	CMakeFiles/main.dir/src/main.cpp.obj	32bbc3bef6e6ece4
-1034	1497	7312814768970752	main.exe	81e510ef2f341a8c
