@@ -35,5 +35,8 @@ build/*
 !build/textures
 !build/models
 
+.idea/*
+.vs/*
+
 \.cache/*
 compile_commands.json
