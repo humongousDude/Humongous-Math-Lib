@@ -5,35 +5,35 @@
 namespace HumongousMath
 {
 
-Vector3::operator Vector2() { return Vector2(x, y); };
+Vector3::operator Vector2() const { return {x, y}; };
 
 float Vector3::Dot(Vector3 v1, Vector3 v2) { return v1.x * v2.x + v1.y * v2.y + v1.z * v2.z; }
 
-float Vector3::Dot(Vector3 v) { return x * v.x + y * v.y + z * v.z; }
+float Vector3::Dot(Vector3 v) const { return x * v.x + y * v.y + z * v.z; }
 
-Vector3 Vector3::Cross(Vector3 v1, Vector3 v2) { return Vector3(v1.y * v2.z - v1.z * v2.y, v1.z * v2.x - v1.x * v2.z, v1.x * v2.y - v1.y * v2.x); }
+Vector3 Vector3::Cross(Vector3 v1, Vector3 v2) { return {v1.y * v2.z - v1.z * v2.y, v1.z * v2.x - v1.x * v2.z, v1.x * v2.y - v1.y * v2.x}; }
 
-Vector3 Vector3::Cross(Vector3 v) { return Vector3(y * v.z - z * v.y, z * v.x - x * v.z, x * v.y - y * v.x); }
+Vector3 Vector3::Cross(Vector3 v) const { return {y * v.z - z * v.y, z * v.x - x * v.z, x * v.y - y * v.x}; }
 
 float Vector3::Distance(const Vector3& v1, const Vector3& v2)
 {
     return 1.0f / Utils::FastInvSqrt((v1.x - v2.x) * (v1.x - v2.x) + (v1.y - v2.y) * (v1.y - v2.y) + (v1.z - v2.z) * (v1.z - v2.z));
 }
 
-float Vector3::Distance(Vector3 v) { return 1.0f / Utils::FastInvSqrt((x - v.x) * (x - v.x) + (y - v.y) * (y - v.y) + (z - v.z) * (z - v.z)); }
+float Vector3::Distance(Vector3 v) const { return 1.0f / Utils::FastInvSqrt((x - v.x) * (x - v.x) + (y - v.y) * (y - v.y) + (z - v.z) * (z - v.z)); }
 
 float Vector3::DistanceSquared(Vector3 v1, Vector3 v2)
 {
     return (v1.x - v2.x) * (v1.x - v2.x) + (v1.y - v2.y) * (v1.y - v2.y) + (v1.z - v2.z) * (v1.z - v2.z);
 }
 
-float Vector3::DistanceSquared(Vector3 v) { return (x - v.x) * (x - v.x) + (y - v.y) * (y - v.y) + (z - v.z) * (z - v.z); }
+float Vector3::DistanceSquared(Vector3 v) const { return (x - v.x) * (x - v.x) + (y - v.y) * (y - v.y) + (z - v.z) * (z - v.z); }
 
-float Vector3::Length() { return 1.0f / Utils::FastInvSqrt(x * x + y * y + z * z); }
+float Vector3::Length() const { return 1.0f / Utils::FastInvSqrt(x * x + y * y + z * z); }
 
 float Vector3::Length(Vector3 v) { return 1.0f / Utils::FastInvSqrt(v.x * v.x + v.y * v.y + v.z * v.z); }
 
-float Vector3::LengthSquared() { return x * x + y * y + z * z; }
+float Vector3::LengthSquared() const { return x * x + y * y + z * z; }
 
 float Vector3::LengthSquared(Vector3 v) { return v.x * v.x + v.y * v.y + v.z * v.z; }
 
@@ -73,11 +73,11 @@ void Vector3::Lerp(Vector3& v, float t)
 
 #pragma region Operators
 
-Vector3 Vector3::operator+(Vector3& v) { return Vector3(x + v.x, y + v.y, z + v.z); }
+Vector3 Vector3::operator+(Vector3& v) const { return {x + v.x, y + v.y, z + v.z}; }
 
-Vector3 Vector3::operator+(Vector2& v) { return Vector3(x + v.x, y + v.y, z); }
+Vector3 Vector3::operator+(Vector2& v) const { return {x + v.x, y + v.y, z}; }
 
-Vector3 Vector3::operator+(float s) { return Vector3(x + s, y + s, z + s); }
+Vector3 Vector3::operator+(float s) const { return {x + s, y + s, z + s}; }
 
 void Vector3::operator+=(Vector3& v)
 {
@@ -97,13 +97,13 @@ void Vector3::operator+=(float s)
     x += s;
     y += s;
     z += s;
-};
+}
 
-Vector3 Vector3::operator*(Vector3& s) { return Vector3(x * s.x, y * s.y, z * s.z); }
+Vector3 Vector3::operator*(Vector3& s) const { return {x * s.x, y * s.y, z * s.z}; }
 
-Vector3 Vector3::operator*(Vector2& s) { return Vector3(x * s.x, y * s.y, z); }
+Vector3 Vector3::operator*(Vector2& s) const { return {x * s.x, y * s.y, z}; }
 
-Vector3 Vector3::operator*(float s) { return Vector3(x * s, y * s, z * s); }
+Vector3 Vector3::operator*(float s) const { return {x * s, y * s, z * s}; }
 
 void Vector3::operator*=(Vector3& s)
 {
@@ -125,11 +125,11 @@ void Vector3::operator*=(float s)
     z *= s;
 }
 
-Vector3 Vector3::operator-(Vector3& v) { return Vector3(x - v.x, y - v.y, z - v.z); }
+Vector3 Vector3::operator-(Vector3& v) const { return {x - v.x, y - v.y, z - v.z}; }
 
-Vector3 Vector3::operator-(Vector2& v) { return Vector3(x - v.x, y - v.y, z); }
+Vector3 Vector3::operator-(Vector2& v) const { return {x - v.x, y - v.y, z}; }
 
-Vector3 Vector3::operator-(float s) { return Vector3(x - s, y - s, z - s); }
+Vector3 Vector3::operator-(float s) const { return {x - s, y - s, z - s}; }
 
 void Vector3::operator-=(Vector3& v)
 {
@@ -151,11 +151,11 @@ void Vector3::operator-=(float s)
     z -= s;
 }
 
-Vector3 Vector3::operator/(Vector3& v) { return Vector3(x / v.x, y / v.y, z / v.z); }
+Vector3 Vector3::operator/(Vector3& v) const { return {x / v.x, y / v.y, z / v.z}; }
 
-Vector3 Vector3::operator/(Vector2& v) { return Vector3(x / v.x, y / v.y, z); }
+Vector3 Vector3::operator/(Vector2& v) const { return {x / v.x, y / v.y, z}; }
 
-Vector3 Vector3::operator/(float s) { return Vector3(x / s, y / s, z / s); }
+Vector3 Vector3::operator/(float s) const { return {x / s, y / s, z / s}; }
 
 void Vector3::operator/=(Vector3& v)
 {
